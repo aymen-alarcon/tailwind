@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap items-center justify-between p-4" style="display: flex; align-items: center; justify-content: space-between;">
+      <a href="tailwind.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <h1 style="color: #ff8a00;" class="text-2xl font-bold">Marrakech</h1><h1 class="text-2xl font-bold">City</h1>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto place-items-end" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Acceuil</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">A Propos</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Visites</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tour</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <div class="relative h-56 overflow-hidden  md:h-96">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="coca-cola-bottles-700x375.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="coke-860x430.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https---s3-ap-northeast-1.amazonaws.com-psh-ex-ftnikkei-3937bb4-images-0-8-2-9-18539280-3-eng-GB-Cropped-1545296792RTX4QHD5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+  </div>
+  <div class="grid grid-cols-3 gap-4 place-items-center mt-10 mx-10"  style="display: flex; align-items: center; justify-content: center;">
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 col-start-1 col-end-2">Décovrir nos service</button>
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 col-start-2 col-end-3">Réserver notre voyage</button>
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 col-start-3 col-end-4">Contactez nous</button>
+  </div>
+  <div class="cards place-items-center grid grid-col-4">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-start-1 col-end-2 m-10">
+      <a href="#">
+          <img class="rounded-t-lg" src="images.jpeg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">La Koutoubia</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit odit qui temporibus? Corrupti cupiditate fugiat adipisci eos illum voluptate pariatur delectus saepe esse ex, et, dolores maxime ducimus eum magni.</p>
+          <center>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Voir
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+          </center>
+      </div>
+    </div> 
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-start-2 col-end-3 m-10">
+      <a href="#">
+          <img class="rounded-t-lg" src="images.jpeg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">La Koutoubia</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore accusantium explicabo ad sed cum soluta nam fuga placeat ratione, totam, cupiditate corporis odio, et quaerat assumenda hic voluptatem natus iure!</p>
+          <center>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Voir
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+          </center>
+      </div>
+    </div>  
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-start-3 col-end-4 m-10">
+      <a href="#">
+          <img class="rounded-t-lg" src="images.jpeg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Menara de Marrakech</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore accusantium explicabo ad sed cum soluta nam fuga placeat ratione, totam, cupiditate corporis odio, et quaerat assumenda hic voluptatem natus iure!</p>
+          <center>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Voir
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+          </center>
+      </div>
+    </div>  
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-start-4 col-end-5 m-10">
+      <a href="#">
+          <img class="rounded-t-lg" src="images.jpeg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Aeroport de Marrakech</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore accusantium explicabo ad sed cum soluta nam fuga placeat ratione, totam, cupiditate corporis odio, et quaerat assumenda hic voluptatem natus iure!</p>
+          <center>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Voir
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+          </center>
+      </div>
+    </div> 
+  </div>
+  <div class="footer flex justify-between items-center p-4 text-white" style="background-color: #a95c00;">
+    <div class="links flex flex-col space-y-2">
+      <a href="#">Accueil</a>
+      <a href="#">À Propos</a>
+      <a href="#">Visite</a>
+      <a href="#">Tour</a>
+      <a href="#">Contact</a>  
+    </div>
+    <div class="contact flex flex-col space-y-2">
+      <label for="letter" class="text-sm">News letter:</label>
+      <textarea name="letter" id="letter" class="p-2 rounded border border-gray-300"></textarea>
+      <label for="email" class="text-sm">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Put Your E-mail here" class="p-2 rounded border border-gray-300">
+    </div>
+    <div class="social-media flex space-x-4">
+      <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+      <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+    </div>
+  </div>  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
